@@ -1,21 +1,32 @@
 *{
     box-sizing: border-box;
 }
-
+#parent{
+    position: relative;
+    background: blue;
+    width: 1000px;
+    height: 800px;
+}
 #bloka,#blokb,#blokc{
     height: 200px;
     width: 200px;
+    position: absolute;
 }
+
 #bloka{
     background: red;
-    float: left;
+    /*margin: 10px;*/
+    right:0px;
 }
 
 #blokb{
     background: yellow;
-    float: right;
+    /*margin: 20px;*/
+    bottom: 0px;
+    right:Opx;
 }
 #blokc{
     background: orange;
-    float: right;
+    /*margin: 30px;*/
+    left:0px;
 }
