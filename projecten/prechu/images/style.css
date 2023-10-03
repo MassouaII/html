@@ -39,8 +39,14 @@ text-align: center;
 .w-25{
     width:25%;
 }
+.w-40{
+    width:40%;
+}
 .w-50{
     width:50%;
+}
+.w-60{
+    width:60%;
 }
 .w-75{
     width:75%;
@@ -48,36 +54,85 @@ text-align: center;
 .w-100{
     width:100%;
 }
+/**BEGIN fonts**/
+@font-face {
+    font-family: swpl;
+    src: url("../webfonts/segoe-wp-light.ttf");
+}
+/**END fonts**/
+
+/**BEGIN nav**/
+nav{
+    padding: 20px 0px;
+    width: 1046px;
+    margin: 0 auto;
+}
+nav li{
+    list-style-type: none;
+}
+nav li a{
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+}
+nav li a:hover{
+    /*border-bottom: 5px solid #5094f2;*/
+    /*padding-bottom: 32px;*/
+    background: #5094f2;
+    color:#fff;
+    padding:10px;
+}
+nav li a:active{
+    color:#5094f2;
+}
+nav p{
+    font-size: 42px;
+    margin: 0px;
+    padding-left: 15px;
+}
+/**END nav**/
 
 /**BEGIN hero**/
 body{
     width: 1250px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 #hero{
     background: url("../images/background_slider.png") no-repeat;
-    padding: 206px 0px;
 }
 #hero div{
-width: 475px;
-    padding: 183px 0px;
+    width: 475px;
+    padding-top: 183px;
+    padding-bottom: 183px;
+    padding-right: 151px;
 }
 h1{
     font-size: 42px;
     color: #fff;
+    font-family: swpl;
 }
 h1 span{
     font-size: 26px;
 }
 #btn{
     background: #5094f2;
-    border: none;
     color: #fff;
     padding: 12px 16px;
     cursor: pointer;
     font-size: 1.3rem;
     font-weight: 300;
     border-radius: 5px;
+    border: 2px transparent;
+}
+#btn:hover{
+    background: #fff;
+    color: #5094f2;
+    border: 2px solid #5094f2;
+    border-radius: 5px;
+    padding: 12px 16px;
+}
+#hero i{
+    padding-right: 10px;
 }
 /**END hero**/
 
@@ -95,6 +150,10 @@ h1 span{
 #basket img{
     background: #ebbb11;
 }
+#latestnews{
+    width:1046px;
+    margin:0 auto;
+}
 #latestnews h2{
     color: #5094f2;
     font-size: 20px;
@@ -110,3 +169,35 @@ h1 span{
     width:295px
 }
 /**END latest news**/
+/**BEGIN shopping cart**/
+#shoppingcart{
+    width:1046px;
+    margin:0 auto;
+}
+#shoppingcart h2{
+    font-size: 42px;
+}
+#shoppingcart h3{
+    font-size: 26px;
+}
+#shoppingcart h2, #shoppingcart h3 {
+    color: rgba(111, 113, 115, 1);
+}
+#shoppingcart p{
+    color: #909090;
+    line-height: 2;
+}
+#articletext{
+    padding-right: 185px;
+}
+/**END shopping cart**/
+/**BEGIN new section cart**/
+#newsection article, #newstructure article{
+    border: 5px solid;
+    margin: 5px;
+    background: red;
+}
+/**END new section cart**/
+footer{
+    border-top:1px solid grey;
+}
