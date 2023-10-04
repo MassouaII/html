@@ -57,7 +57,7 @@ text-align: center;
 /**BEGIN fonts**/
 @font-face {
     font-family: swpl;
-    src: url("../webfonts/segoe-wp-light.ttf");
+    src: url("segoe-wp-light.ttf");
 }
 /**END fonts**/
 
@@ -98,7 +98,7 @@ body{
     margin: 0 auto;
 }
 #hero{
-    background: url("../images/background_slider.png") no-repeat;
+    background: url("background_slider.png") no-repeat;
 }
 #hero div{
     width: 475px;
